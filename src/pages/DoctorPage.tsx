@@ -16,7 +16,7 @@ export default function DoctorPage({ onNavigate, onBookClick }: DoctorPageProps)
   return (
     <div className="pt-24 min-h-screen bg-slate-50">
       {/* Hero Header */}
-      <section className="relative py-20 bg-[#1F4E79] text-white overflow-hidden">
+      <section className="relative py-16 md:py-24 bg-[#1F4E79] text-white overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-r from-[#1E293B] to-[#1F4E79] opacity-95" />
         <div className="absolute -right-48 -bottom-48 w-96 h-96 rounded-full bg-cyan-500/10 blur-3xl" />
 
@@ -65,7 +65,7 @@ export default function DoctorPage({ onNavigate, onBookClick }: DoctorPageProps)
             {/* Visual Portrait Card (4 cols) */}
             <div className="lg:col-span-5 relative">
               <div className="bg-slate-50 p-4 rounded-3xl border border-slate-100 shadow-xl space-y-4">
-                <img
+                <img loading="lazy" decoding="async"
                   src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600&h=650"
                   alt="Dr. Manik Gupta, MDS"
                   className="rounded-2xl object-cover w-full aspect-square md:aspect-11/12 shadow-inner"
@@ -144,7 +144,7 @@ export default function DoctorPage({ onNavigate, onBookClick }: DoctorPageProps)
       </section>
 
       {/* Trust Standards Box */}
-      <section className="py-20 bg-slate-100 border-t border-b border-slate-200">
+      <section className="py-16 md:py-24 bg-slate-100 border-t border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center max-w-lg mx-auto mb-16">
             <h3 className="font-sans font-black text-2xl md:text-3xl text-[#1E293B] tracking-tight">
@@ -184,7 +184,7 @@ export default function DoctorPage({ onNavigate, onBookClick }: DoctorPageProps)
       </section>
 
       {/* CTA final Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center space-y-6">
           <h3 className="font-sans font-extrabold text-3xl text-[#1E293B]">
             Ready to Schedule Your Consult?
@@ -211,3 +211,4 @@ export default function DoctorPage({ onNavigate, onBookClick }: DoctorPageProps)
     </div>
   );
 }
+

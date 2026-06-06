@@ -186,7 +186,7 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
   return (
     <div className="pt-24 min-h-screen bg-slate-50">
       {/* 1. Hero Block */}
-      <section className="relative py-20 bg-[#1F4E79] text-white overflow-hidden">
+      <section className="relative py-16 md:py-24 bg-[#1F4E79] text-white overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-r from-[#1F4E79] to-[#36B6C9] opacity-95" />
         <div className="absolute -right-48 -bottom-48 w-96 h-96 rounded-full bg-white/5 blur-3xl" />
 
@@ -234,12 +234,12 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
       </div>
 
       {/* 2. Benefits Column */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-16 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-5 relative">
-              <img
+              <img loading="lazy" decoding="async"
                 src={service.imgUrl}
                 alt={service.title}
                 className="rounded-3xl object-cover w-full aspect-13/10 shadow-lg border border-slate-100"
@@ -276,7 +276,7 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
       </section>
 
       {/* 3. Treatment Process Flow */}
-      <section className="py-16 md:py-20 bg-slate-50 border-t border-b border-slate-150">
+      <section className="py-16 md:py-16 md:py-24 bg-slate-50 border-t border-b border-slate-150">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center max-w-xl mx-auto mb-16">
             <span className="text-[10px] font-black uppercase text-[#1F4E79] tracking-widest bg-blue-50 px-2.5 py-1 rounded-md">How It Works</span>
@@ -303,7 +303,7 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
       </section>
 
       {/* 4. Before & After Panel */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100">
             <div className="space-y-4">
@@ -327,11 +327,11 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
 
             <div className="grid grid-cols-2 gap-3.5">
               <div className="relative rounded-2xl overflow-hidden shadow-sm">
-                <img src={service.beforeImage} alt="Before Treatment" className="w-full aspect-10/8 object-cover" />
+                <img loading="lazy" decoding="async" src={service.beforeImage} alt="Before Treatment" className="w-full aspect-10/8 object-cover" />
                 <div className="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[9px] font-bold uppercase py-0.5 px-2 rounded">Before</div>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-sm">
-                <img src={service.afterImage} alt="After Treatment" className="w-full aspect-10/8 object-cover" />
+                <img loading="lazy" decoding="async" src={service.afterImage} alt="After Treatment" className="w-full aspect-10/8 object-cover" />
                 <div className="absolute bottom-2 left-2 bg-emerald-600 text-white text-[9px] font-bold uppercase py-0.5 px-2 rounded">After</div>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
       </section>
 
       {/* 5. FAQs specific Accordion */}
-      <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-150">
+      <section className="py-16 md:py-16 md:py-24 bg-slate-50 border-t border-slate-150">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="text-[10px] font-black uppercase text-[#1F4E79] tracking-widest bg-blue-50 px-2.5 py-1 rounded-md">TREATMENT CLARITY</span>
@@ -386,7 +386,7 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
       </section>
 
       {/* 6. CTA Footer */}
-      <section className="py-20 bg-[#1F4E79] text-white text-center relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-[#1F4E79] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[#1E293B]/40" />
         <div className="relative max-w-2xl mx-auto px-6 space-y-5">
           <h3 className="font-sans font-black text-2xl md:text-3xl text-white">
@@ -415,3 +415,4 @@ export default function ServicePage({ serviceKey, onNavigate, onBookClick }: Ser
     </div>
   );
 }
+

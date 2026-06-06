@@ -196,7 +196,7 @@ export default function ClinicTechnology() {
                 {/* Tech image & specification values */}
                 <div className="md:col-span-5 space-y-6">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border-2 border-slate-100 bg-slate-50">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={activeTech.imageUrl}
                       alt={activeTech.name}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
@@ -244,3 +244,4 @@ export default function ClinicTechnology() {
     </section>
   );
 }
+

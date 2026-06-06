@@ -42,7 +42,7 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
   ];
 
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100">
+    <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#36B6C9] bg-cyan-50 px-3.5 py-1.5 rounded-full inline-block">
@@ -60,12 +60,12 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
           {previewCases.map((item) => (
             <div
               key={item.id}
-              className="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300"
+              className="bg-white border border-slate-100/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all duration-300"
             >
               {/* Graphic side-by-side or overlapping images */}
               <div className="grid grid-cols-2 bg-slate-100 aspect-[4/3] relative">
                 <div className="relative overflow-hidden group">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.before}
                     alt="Before Treatment"
                     className={`w-full h-full object-cover filter ${item.beforeClass}`}
@@ -77,7 +77,7 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
                 </div>
 
                 <div className="relative overflow-hidden group border-l border-white/40">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.after}
                     alt="After Treatment"
                     className={`w-full h-full object-cover filter ${item.afterClass}`}
@@ -90,7 +90,7 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
               </div>
 
               {/* Title & metrics tags */}
-              <div className="p-5 space-y-2">
+              <div className="p-6 md:p-8 space-y-2">
                 <span className="text-[10px] font-black uppercase text-emerald-600 tracking-wider block bg-emerald-50 px-2 py-0.5 rounded w-fit">
                   {item.label}
                 </span>
@@ -105,7 +105,7 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
         <div className="mt-12 text-center">
           <button
             onClick={() => onNavigate('gallery')}
-            className="px-5 py-3.5 bg-[#1F4E79] text-white hover:bg-[#36B6C9] font-bold text-xs uppercase tracking-widest rounded-xl transition duration-200 inline-flex items-center space-x-2 cursor-pointer shadow-sm"
+            className="px-6 py-4 bg-[#1F4E79] text-white hover:bg-[#4F81BD] hover:-translate-y-0.5 active:translate-y-0 font-bold text-xs uppercase tracking-widest rounded-xl transition-all duration-300 inline-flex items-center space-x-2 cursor-pointer shadow-md hover:shadow-lg focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79] focus-visible:ring-offset-2"
           >
             <span>Interactive Smile Gallery</span>
             <ArrowRight className="w-4 h-4" />
@@ -116,3 +116,4 @@ export default function HomeBeforeAfterPreview({ onNavigate }: HomeBeforeAfterPr
     </section>
   );
 }
+

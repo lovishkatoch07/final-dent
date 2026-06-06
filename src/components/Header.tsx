@@ -87,7 +87,7 @@ export default function Header({ onBookClick }: HeaderProps) {
             </a>
             <button
               onClick={onBookClick}
-              className="px-6 py-3 bg-[#1F4E79] text-white font-semibold text-sm rounded-xl hover:bg-[#4F81BD] shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 hover:shadow-md cursor-pointer"
+              className="px-8 py-3.5 bg-[#1F4E79] text-white font-bold text-sm rounded-xl hover:bg-[#4F81BD] shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79] focus-visible:ring-offset-2 hover:shadow-md cursor-pointer"
             >
               Book Appointment
             </button>
@@ -98,14 +98,15 @@ export default function Header({ onBookClick }: HeaderProps) {
             <a
               href="tel:+919622294841"
               aria-label="Call Clinic"
-              className="p-2.5 rounded-xl bg-slate-100 text-[#1F4E79] active:bg-slate-200"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl bg-slate-100 text-[#1F4E79] hover:bg-slate-200 transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79]"
             >
-              <Phone className="w-5 h-5 text-[#1F4E79]" />
+              <Phone className="w-5 h-5" />
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
-              className="p-2.5 rounded-xl border border-slate-100 text-[#1E293B] active:bg-slate-50 cursor-pointer"
+              aria-expanded={isOpen}
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl border border-slate-200 text-[#1E293B] hover:bg-slate-50 transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79] cursor-pointer"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -151,7 +152,7 @@ export default function Header({ onBookClick }: HeaderProps) {
                   <button
                     onClick={() => setIsOpen(false)}
                     aria-label="Close Mobile Menu"
-                    className="p-2 rounded-lg text-slate-400 hover:bg-slate-50 cursor-pointer"
+                    className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79] cursor-pointer"
                   >
                     <X className="w-5 h-5" />
                   </button>

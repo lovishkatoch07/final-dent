@@ -195,7 +195,7 @@ export default function Testimonials() {
             {/* Immersive interactive mock player box */}
             <div className="relative w-full aspect-[16/10] bg-slate-900 rounded-2xl overflow-hidden mt-6 shadow-md select-none group">
               {/* Simulated patient thumbnail */}
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800&h=500"
                 alt="Sneha - Dental Implant Patient Jammu"
                 className={`w-full h-full object-cover transition-all duration-700 ${
@@ -471,3 +471,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

@@ -116,7 +116,7 @@ export default function FAQPage({ onNavigate, onBookClick }: FAQPageProps) {
       </div>
 
       {/* Accordion List */}
-      <section className="py-20">
+      <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           
           {filteredFaqs.length === 0 ? (
@@ -183,7 +183,7 @@ export default function FAQPage({ onNavigate, onBookClick }: FAQPageProps) {
       </section>
 
       {/* Booking redirection Section */}
-      <section className="py-20 bg-white text-center border-t">
+      <section className="py-16 md:py-24 bg-white text-center border-t">
         <div className="max-w-2xl mx-auto px-6 space-y-4">
           <h2 className="font-sans font-black text-2xl md:text-3xl text-[#1E293B]">Have custom medical questions?</h2>
           <p className="text-[#64748B] text-xs md:text-sm leading-relaxed max-w-sm mx-auto">

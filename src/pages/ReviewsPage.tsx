@@ -232,7 +232,7 @@ export default function ReviewsPage({ onNavigate, onBookClick }: ReviewsPageProp
       </section>
 
       {/* Directory cards section with category filtering */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-5xl mx-auto px-6 space-y-10">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-6">
@@ -296,7 +296,7 @@ export default function ReviewsPage({ onNavigate, onBookClick }: ReviewsPageProp
       </section>
 
       {/* Booking redirection Section */}
-      <section className="py-20 bg-white text-center">
+      <section className="py-16 md:py-24 bg-white text-center">
         <div className="max-w-2xl mx-auto px-6 space-y-4">
           <h2 className="font-sans font-black text-2xl md:text-3xl text-[#1E293B]">Ready to Schedule Your Treatment?</h2>
           <p className="text-[#64748B] text-xs md:text-sm leading-relaxed max-w-md mx-auto">

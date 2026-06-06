@@ -61,7 +61,7 @@ export default function HomeDoctorSpotlight({ onNavigate }: HomeDoctorSpotlightP
 
             {/* Doctor Photo */}
             <div className="lg:col-span-5 h-full min-h-[300px] lg:min-h-[450px] relative">
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
                 alt="Dr. Manik Gupta"
                 className="w-full h-full object-cover object-top"
@@ -75,3 +75,4 @@ export default function HomeDoctorSpotlight({ onNavigate }: HomeDoctorSpotlightP
     </section>
   );
 }
+

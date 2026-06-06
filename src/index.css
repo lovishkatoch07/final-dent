@@ -17,6 +17,12 @@ html {
   color: #1F4E79;
 }
 
+/* Global focus visibility for accessibility */
+*:focus-visible {
+  outline: 2px solid #1F4E79;
+  outline-offset: 2px;
+}
+
 /* Custom scrollbar adjustments */
 ::-webkit-scrollbar {
   width: 8px;

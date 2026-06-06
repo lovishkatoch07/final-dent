@@ -74,7 +74,7 @@ export default function About({ onBookClick }: AboutProps) {
                 transition={{ duration: 0.6 }}
                 className="rounded-3xl overflow-hidden border-8 border-white shadow-2xl relative z-10 aspect-[4/5] max-w-[390px] mx-auto bg-slate-200"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600&h=750"
                   alt="Dr. Manik Gupta - BDS MDS Principal Dentist Gandhi Nagar Jammu"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -181,3 +181,4 @@ export default function About({ onBookClick }: AboutProps) {
     </section>
   );
 }
+

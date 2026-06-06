@@ -151,7 +151,7 @@ export default function GalleryPage({ onNavigate, onBookClick }: GalleryPageProp
                 onMouseMove={handleMouseMove}
                 onTouchMove={handleTouchMove}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={currentCase.afterUrl}
                   alt="Post surgical result"
                   className={`absolute inset-0 w-full h-full object-cover pointer-events-none filter ${currentCase.afterClass || ''}`}
@@ -166,7 +166,7 @@ export default function GalleryPage({ onNavigate, onBookClick }: GalleryPageProp
                   style={{ width: `${sliderPosition}%` }}
                 >
                   <div className="absolute inset-0 w-[550px] sm:w-[620px] lg:w-[680px] h-full">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={currentCase.beforeUrl}
                       alt="Pre diagnosis teeth"
                       className={`w-full h-full object-cover pointer-events-none filter ${currentCase.beforeClass || ''}`}
@@ -254,7 +254,7 @@ export default function GalleryPage({ onNavigate, onBookClick }: GalleryPageProp
       </section>
 
       {/* Booking CTA section */}
-      <section className="py-20 bg-[#1F4E79] text-white text-center">
+      <section className="py-16 md:py-24 bg-[#1F4E79] text-white text-center">
         <div className="max-w-2xl mx-auto px-6 space-y-4">
           <h2 className="font-sans font-black text-2xl md:text-3xl">Achieve Your Own Ideal Smile Profile</h2>
           <p className="text-slate-100 text-xs md:text-sm leading-relaxed max-w-md mx-auto">
@@ -273,3 +273,4 @@ export default function GalleryPage({ onNavigate, onBookClick }: GalleryPageProp
     </div>
   );
 }
+

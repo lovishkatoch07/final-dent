@@ -16,7 +16,7 @@ export default function AboutPage({ onNavigate, onBookClick }: AboutPageProps) {
   return (
     <div className="pt-24 min-h-screen bg-slate-50">
       {/* Hero Header */}
-      <section className="relative py-20 bg-[#1F4E79] text-white overflow-hidden">
+      <section className="relative py-16 md:py-24 bg-[#1F4E79] text-white overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-r from-[#1F4E79] to-[#36B6C9] opacity-90" />
         <div className="absolute -right-48 -bottom-48 w-96 h-96 rounded-full bg-white/5 blur-3xl" />
         <div className="absolute -left-48 -top-48 w-96 h-96 rounded-full bg-cyan-500/10 blur-3xl" />
@@ -66,7 +66,7 @@ export default function AboutPage({ onNavigate, onBookClick }: AboutPageProps) {
             {/* Visual Column */}
             <div className="relative">
               <div className="absolute inset-0 bg-linear-to-tr from-[#1F4E79]/20 to-transparent rounded-3xl -rotate-2" />
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800&q=80"
                 alt="Elite Smile clinic infrastructure"
                 className="relative rounded-3xl object-cover shadow-xl border-4 border-white transform hover:scale-101 transition duration-300 w-full aspect-14/10"
@@ -118,7 +118,7 @@ export default function AboutPage({ onNavigate, onBookClick }: AboutPageProps) {
       </section>
 
       {/* Clinical Values Cards */}
-      <section className="py-20 bg-slate-50 border-t border-b border-slate-100">
+      <section className="py-16 md:py-24 bg-slate-50 border-t border-b border-slate-100">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center max-w-xl mx-auto mb-16">
             <span className="text-[10px] font-black uppercase tracking-widest text-[#1F4E79]">OUR CORE PRINCIPLES</span>
@@ -271,7 +271,7 @@ export default function AboutPage({ onNavigate, onBookClick }: AboutPageProps) {
       </section>
 
       {/* Meet the Team Preview Banner */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="inline-flex items-center space-x-1 mb-4 bg-emerald-50 text-emerald-700 px-3.5 py-1 rounded-full text-xs font-bold uppercase">
             <Star className="w-3.5 h-3.5 fill-emerald-600" />
@@ -296,3 +296,4 @@ export default function AboutPage({ onNavigate, onBookClick }: AboutPageProps) {
     </div>
   );
 }
+

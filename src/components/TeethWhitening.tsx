@@ -193,7 +193,7 @@ export default function TeethWhitening({ onBookClick }: TeethWhiteningProps) {
               <div className="absolute -bottom-6 -left-6 w-36 h-36 bg-blue-100 rounded-full blur-2xl pointer-events-none" />
               
               <div className="rounded-2xl overflow-hidden border-8 border-white shadow-2xl relative aspect-square max-w-[420px] mx-auto">
-                <img
+                <img loading="lazy" decoding="async"
                   src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600&h=600"
                   alt="Elite Smile Professional Teeth Whitening treatment result"
                   className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
@@ -219,3 +219,4 @@ export default function TeethWhitening({ onBookClick }: TeethWhiteningProps) {
     </section>
   );
 }
+

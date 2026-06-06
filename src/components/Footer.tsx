@@ -75,7 +75,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-slate-400 hover:text-white transition-colors duration-200 block"
+                    className="text-slate-400 hover:text-white transition-colors duration-200 block py-1.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#36B6C9] rounded"
                   >
                     {link.label}
                   </a>
@@ -94,7 +94,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-slate-400 hover:text-[#36B6C9] transition-colors duration-200 block"
+                    className="text-slate-400 hover:text-[#36B6C9] transition-colors duration-200 block py-1.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#36B6C9] rounded"
                   >
                     {link.label}
                   </a>
@@ -115,7 +115,7 @@ export default function Footer() {
                   80-A/A, Near Gole Market, Gandhi Nagar, Jammu
                 </span>
               </div>
-              <a href="tel:+919622294841" className="flex items-center space-x-2.5 hover:text-white transition-colors block">
+              <a href="tel:+919622294841" aria-label="Call +91 96222 94841" className="flex items-center space-x-2.5 hover:text-white transition-colors py-2 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#36B6C9] rounded">
                 <Phone className="w-4.5 h-4.5 text-[#36B6C9] shrink-0" />
                 <span className="font-semibold text-white">+91 96222 94841</span>
               </a>
@@ -146,8 +146,8 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-6 text-slate-400">
-            <a href="#about" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#about" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#about" className="hover:text-white transition-colors py-2 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#36B6C9] rounded">Privacy Policy</a>
+            <a href="#about" className="hover:text-white transition-colors py-2 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#36B6C9] rounded">Terms of Service</a>
           </div>
         </div>
 

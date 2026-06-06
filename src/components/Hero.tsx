@@ -178,6 +178,7 @@ export default function Hero({ onBookClick }: HeroProps) {
                   alt="State-of-the-art Dental Chair setup at Elite Smile Dental Clinic Jammu"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   referrerPolicy="no-referrer"
+                  fetchPriority="high"
                 />
               </motion.div>
 
@@ -205,3 +206,4 @@ export default function Hero({ onBookClick }: HeroProps) {
     </section>
   );
 }
+

@@ -128,7 +128,7 @@ export default function BeforeAfter() {
               onTouchMove={handleTouchMove}
             >
               {/* After Image display */}
-              <img
+              <img loading="lazy" decoding="async"
                 src={currentCase.afterUrl}
                 alt="After restored smile result"
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
@@ -144,7 +144,7 @@ export default function BeforeAfter() {
                 style={{ width: `${sliderPosition}%` }}
               >
                 <div className="absolute inset-0 w-[634px] sm:w-[700px] md:w-[750px] lg:w-[780px] h-full">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={currentCase.beforeUrl}
                     alt="Before damaged teeth diagnostics"
                     className="w-full h-full object-cover pointer-events-none filter saturate-75 contrast-95"
@@ -253,3 +253,4 @@ export default function BeforeAfter() {
     </section>
   );
 }
+

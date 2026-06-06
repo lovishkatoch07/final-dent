@@ -57,7 +57,7 @@ export default function HomeFeaturedServices({ onNavigate }: HomeFeaturedService
   ];
 
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100">
+    <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#36B6C9] bg-cyan-100/60 px-3.5 py-1.5 rounded-full">
@@ -75,12 +75,12 @@ export default function HomeFeaturedServices({ onNavigate }: HomeFeaturedService
           {services.map((item) => (
             <div
               key={item.key}
-              className="bg-white border border-slate-100 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-xl hover:border-[#1F4E79]/20 hover:-translate-y-1 transition-all duration-300 group"
+              className="bg-white border border-slate-100/80 rounded-2xl overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:border-[#1F4E79]/20 hover:-translate-y-1 transition-all duration-300 group"
             >
               <div>
                 {/* 16:9 Image at top */}
                 <div className="aspect-video w-full overflow-hidden bg-slate-100 relative">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -93,7 +93,7 @@ export default function HomeFeaturedServices({ onNavigate }: HomeFeaturedService
                   </div>
                 </div>
 
-                <div className="p-6 space-y-3">
+                <div className="p-6 md:p-8 space-y-3">
                   <h3 className="font-sans font-black text-base md:text-lg text-[#1E293B] group-hover:text-[#1F4E79] transition-colors leading-snug">
                     {item.title}
                   </h3>
@@ -103,10 +103,10 @@ export default function HomeFeaturedServices({ onNavigate }: HomeFeaturedService
                 </div>
               </div>
 
-              <div className="px-6 pb-6 pt-4 border-t border-slate-50">
+              <div className="px-6 md:px-8 pb-6 md:pb-8 pt-4 border-t border-slate-50">
                 <button
                   onClick={() => onNavigate(item.key)}
-                  className="w-full py-3 bg-[#1F4E79]/5 text-[#1F4E79] hover:bg-[#1F4E79] hover:text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition duration-200 inline-flex items-center justify-center space-x-1.5 cursor-pointer leading-none"
+                  className="w-full py-3.5 bg-[#1F4E79]/5 text-[#1F4E79] hover:bg-[#1F4E79] hover:text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-colors duration-300 inline-flex items-center justify-center space-x-1.5 cursor-pointer leading-none focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#1F4E79] focus-visible:ring-offset-1"
                 >
                   <span>Learn More Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -119,3 +119,4 @@ export default function HomeFeaturedServices({ onNavigate }: HomeFeaturedService
     </section>
   );
 }
+
