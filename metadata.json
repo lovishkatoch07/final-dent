@@ -1,0 +1,6 @@
+{
+  "name": "Elite Smile Dental Clinic",
+  "description": "Premium healthcare and cosmetic dentistry website for Elite Smile Dental Clinic in Jammu, J&K. Dr. Manik Gupta, expert care, dental implants, teeth whitening, smile makeovers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
